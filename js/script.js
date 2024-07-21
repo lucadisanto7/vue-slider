@@ -35,14 +35,14 @@ createApp({
     },
     methods: {
         prevImage() {
-            if (this.active_image === 0) {
+            if (this.active_image == 0) {
                 this.active_image = this.slides.length - 1;
             } else {
                 this.active_image--;
             }
         },
         nextImage() {
-            if (this.active_image === this.slides.length - 1) {
+            if (this.active_image == this.slides.length - 1) {
                 this.active_image = 0;
             } else {
                 this.active_image++;
